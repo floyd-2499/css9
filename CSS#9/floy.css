@@ -1,0 +1,113 @@
+body {
+  margin: 0;
+  overflow: hidden;
+  font-family: "Open Sans", sans-serif;
+}
+
+.ib {
+  width: 7.23cm;
+  background-color: rgb(8, 7, 7);
+  overflow: auto;
+  position: relative;
+  top: 10px;
+  left: 10px;
+}
+
+.ib a {
+  float: left;
+  display: block;
+  text-align: center;
+  padding: 15px;
+  transition: all 0.3s ease;
+  color: rgb(240, 232, 232);
+  font-size: 36px;
+}
+
+.ib a:hover {
+  background-color: rgb(18, 207, 27);
+}
+
+.ib-a {
+  background-color: rgb(4, 102, 12);
+}
+
+h1 {
+  position: relative;
+  top: -2cm;
+  left: 8cm;
+}
+
+.ibars {
+  display: flex;
+  flex-direction: column;
+  cursor: pointer;
+}
+.ibar1,
+.ibar2,
+.ibar3 {
+  width: 35px;
+  height: 5px;
+  background-color: #333;
+  margin: 6px 0;
+  transition: 0.4s;
+}
+.change {
+  align-items: center;
+  border: 2px solid black;
+  width: fit-content;
+  justify-content: center;
+}
+
+.change .ibar1 {
+  -webkit-transform: rotate(-45deg);
+  transform: rotate(-45deg) translate(-9px, 6px);
+} /* Need to correct .. ask Royson*/
+.change .ibar2 {
+  opacity: 0;
+}
+.change .ibar3 {
+  -webkit-transform: rotate(45deg) translate(-17px, -15px);
+  transform: rotate(45deg) translate(-17px, -15px);
+}
+
+.accordion {
+  background-color: rgb(182, 176, 176);
+  color: cornsilk;
+  cursor: pointer;
+  padding: 20px;
+  width: 100%;
+  border-bottom: 2px solid white;
+  text-align: left;
+  outline: none;
+  font-size: 15px;
+  transition: 0.4s;
+}
+.active,
+.accordion:hover {
+  background-color: rgb(9, 180, 52);
+}
+.accordian:active {
+  content: "\002b";
+  color: #333;
+  font-weight: bold;
+  float: right;
+  margin-left: 5px;
+  padding: 4px;
+}
+
+.active:active {
+  content: "\2212";
+}
+
+.panel {
+  padding: 20px;
+  display: none;
+  background-color: white;
+  overflow: hidden;
+}
+p {
+  text-indent: 2cm;
+  border: 4px solid rgb(27, 199, 27);
+  font-size: larger;
+  line-height: 30px;
+}
